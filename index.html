@@ -1,0 +1,64 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='https://fonts.googleapis.com/css?family=Droid+Sans:700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+    	<main>
+
+    		<header>
+    			<h1>Chord Shooter Extreme!</h1>
+    		</header>
+
+    		<span class="octaves up">+</span>
+    		<span class="octaves down">-</span>
+
+    		<div id="canvas">
+    			<div id="player"></div>
+    			<div id="ball"></div>
+
+    			<div class="scale">
+	    			<div class="note A">A</div>
+	    			<div class="note B">B</div>
+	    			<div class="note C">C</div>
+	    			<div class="note D">D</div>
+	    			<div class="note E">E</div>
+	    			<div class="note F">F</div>
+	    			<div class="note G">G</div>
+    			</div>
+    		</div>
+
+    		<div id="reset" onClick="window.location.reload()">Reset game</div>
+
+    	</main>
+
+    	<!--
+        <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+        -->
+
+        <!--libraries-->
+        <script src="js/timbre.js"></script>
+        <script src="js/soundmanager2.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+	        window.onload = function()
+	        {
+	  			game.init();
+			};
+        </script>
+
+    </body>
+</html>
+
+
